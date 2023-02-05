@@ -6,7 +6,7 @@ kill_timeout = 5
 processes = []
 
 [build]
-  image = "ghcr.io/n8n-io/n8n:latest"
+  image = "n8nio/n8n:latest"
 
 [experimental]
   allowed_public_ports = []
