@@ -1,15 +1,16 @@
-app = "hexaorzo-analytics"
+# fly.toml file generated for hexaorzo-feedback on 2023-01-16T15:57:42+05:30
+
+app = "hexaorzo-feedback"
 kill_signal = "SIGINT"
 kill_timeout = 5
 processes = []
 
 [build]
-  image = "ghcr.io/umami-software/umami:postgresql-latest"
+  image = "getfider/fider:stable"
 
 [env]
   
 [experimental]
-  allowed_public_ports = []
   auto_rollback = true
 
 [[services]]
