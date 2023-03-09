@@ -17,11 +17,12 @@ appConfig:
   theme: dashy-docs
   customCss: '@media (min-width: 1780px) { .home .item-group-container:not(.item-size-large) { grid-template-columns: repeat(3, 1fr); } } .home .item-group-container.item-size-large .item-group-grid, .home .item-group-container.orientation-vertical .item-group-grid { display: flex !important; }'
   auth:
-    enableGuestAccess: false
+    enableGuestAccess: true
     users:
     - user: hexaorzo
       hash: 01a9ac6778dd6d8a7ac04733890f55ba714b01f8e4eea512323d8c89090f0cc8
       type: admin
+    disableConfigurationForNonAdmin: true
   webSearch:
     searchEngine: 'duckduckgo'
     openingMethod: 'newtab'
